@@ -128,6 +128,9 @@
                                         <div class="tranding-slide-content">
                                             <h1>Event and Boat Party</h1>
                                             <a class="whats-app-yachts"
+                                                style=" position: absolute;
+                                            top: -20px;
+                                            right: 30px;"
                                                 href="https://api.whatsapp.com/send/?phone=971508846694&text&type=phone_number&app_absent=0">
                                                 <img src="{{ asset('Assets/images/whatsapp.png') }}"
                                                     style="width: 130px !important; height: 30px !important" alt="whatsapp">
