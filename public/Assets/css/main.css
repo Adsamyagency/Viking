@@ -254,11 +254,11 @@ body {
     background-clip: text;
     text-fill-color: transparent;
 }
-/* .whats-app-yachts {
+.whats-app-yachts {
     position: absolute;
     top: -20px;
     right: 30px;
-} */
+}
 
 @media (max-width: 768px) {
     .tranding-slide-content h1 {
