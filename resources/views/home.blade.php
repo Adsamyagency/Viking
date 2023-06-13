@@ -2,6 +2,10 @@
 
 @section('content')
     <x-header></x-header>
+    <a style="position: fixed; bottom: 100px; left: 40px; z-index: 999"
+        href="https://api.whatsapp.com/send/?phone=971508846694&text&type=phone_number&app_absent=0">
+        <img src="{{ asset('Assets/images/whats-fixed.png') }}" />
+    </a>
     <section class="landing position-relative">
         <img src="{{ asset('Assets/images/graphic.png') }}" class="graphic-landing">
         <div class="landing-content">
@@ -49,6 +53,11 @@
                                         <img src="{{ asset('Assets/images/yachts.png') }}">
                                         <div class="tranding-slide-content">
                                             <h1>Our Top Yachts</h1>
+                                            <a class="whats-app-yachts"
+                                                href="https://api.whatsapp.com/send/?phone=971508846694&text&type=phone_number&app_absent=0">
+                                                <img src="{{ asset('Assets/images/whatsapp.png') }}"
+                                                    style="width: 130px !important; height: 30px !important" alt="whatsapp">
+                                            </a>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="col-3">
                                                     <p class="d-flex align-items-center gap-2"> <img
@@ -116,14 +125,94 @@
                                 <div class="swiper-slide tranding-slide">
                                     <div class="tranding-slide-img">
                                         <img src="{{ asset('Assets/images/yachts2.png') }}">
+                                        <div class="tranding-slide-content">
+                                            <h1>Event and Boat Party</h1>
+                                            <a class="whats-app-yachts"
+                                                href="https://api.whatsapp.com/send/?phone=971508846694&text&type=phone_number&app_absent=0">
+                                                <img src="{{ asset('Assets/images/whatsapp.png') }}"
+                                                    style="width: 130px !important; height: 30px !important" alt="whatsapp">
+                                            </a>
+                                            <div>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/cocktail.png') }}" />
+                                                    EVENT
+                                                </p>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/cocktail.png') }}" />BIRTHDAYS</p>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/cocktail.png') }}" />WEDDINGS</p>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/cocktail.png') }}" />THURSDAYS WHITE
+                                                    DRESS PARTY</p>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/cocktail.png') }}" />FASHION MODELS
+                                                    YACHT PRO PHOTOSHOOTS</p>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/cocktail.png') }}" />BUSINESS
+                                                    MEETINGS ON YACHT NETWORKINGS</p>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                                 <!-- Slide-end -->
                                 <!-- Slide-start -->
                                 <div class="swiper-slide tranding-slide">
                                     <div class="tranding-slide-img">
                                         <img src="{{ asset('Assets/images/yachts3.png') }}">
+                                        <div class="tranding-slide-content">
+                                            <h1>Water Sports</h1>
+                                            <a class="whats-app-yachts"
+                                                href="https://api.whatsapp.com/send/?phone=971508846694&text&type=phone_number&app_absent=0">
+                                                <img src="{{ asset('Assets/images/whatsapp.png') }}"
+                                                    style="width: 130px !important; height: 30px !important"
+                                                    alt="whatsapp">
+                                            </a>
+                                            <div>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon" src="{{ asset('Assets/images/taz.png') }}" />
+                                                    JET SKI
+                                                </p>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/taz.png') }}" />FLY
+                                                    FISH</p>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/taz.png') }}" />FLY
+                                                    BOARD</p>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/taz.png') }}" />DONUT
+                                                    RIDE</p>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/taz.png') }}" />BANANA BOAT</p>
+                                                <p class="d-flex align-items-center gap-2"> <img
+                                                        style="width: 20px !important; height: 20px !important"
+                                                        class="yacht-icon"
+                                                        src="{{ asset('Assets/images/taz.png') }}" />PARASAILING</p>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                                 {{-- SLide ENd --}}
                             </div>
@@ -280,19 +369,15 @@
                 indulge in the ultimate luxury yacht experience in Dubai. Book your Yacht party right now and make your
                 event a unique and
                 unforgettable experience.</p>
-            <a href="#" class=" f-space custom-btn">Book now</a>
-
+            <a href="https://api.whatsapp.com/send/?phone=971508846694&text&type=phone_number&app_absent=0"
+                class=" f-space custom-btn">Book now</a>
         </div>
     </div>
 
     {{-- Footer --}}
     <footer class=" text-center text-lg-start">
-
         <div class="container p-4">
-
             <div class="row">
-
-
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <img src="{{ asset('Assets/images/logo.png') }}" alt="">
                 </div>
@@ -318,13 +403,13 @@
                     <h5 class="text-uppercase mb-0">Navigation</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!" class="text-white f-mon text-decoration-none">Private Party</a>
+                            <a href="#yachts" class="text-white f-mon text-decoration-none">Private Party</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white f-mon text-decoration-none">The Yacht</a>
+                            <a href="#yachts" class="text-white f-mon text-decoration-none">The Yacht</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white f-mon text-decoration-none">Contact</a>
+                            <a href="#" class="text-white f-mon text-decoration-none">Contact</a>
                         </li>
                     </ul>
                 </div>

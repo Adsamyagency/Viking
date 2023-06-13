@@ -7,6 +7,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Viking</title>
 
+    {{-- Fav Icon --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('Assets/images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('Assets/images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('Assets/images/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('Assets/images/site.webmanifest') }}">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
