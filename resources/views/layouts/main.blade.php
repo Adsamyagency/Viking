@@ -20,7 +20,7 @@
     {{-- Custom Css --}}
     <link rel="stylesheet" href="{{ asset('Assets/css/main.css') }}">
 
-    {{-- Bootstrap --}}
+    {{-- Bootstrap Link --}}
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
 
     {{-- Fonts --}}
