@@ -9,24 +9,16 @@
     <section class="landing position-relative">
         <img src="{{ asset('Assets/images/graphic.png') }}" class="graphic-landing">
         <div class="landing-content">
-            <h1 class="landing-content-title f-rocker">Luxury Yacht in Dubai</h1>
-            <p class="text-white">Experience the Arabian Sea in Style with our Premier Yacht Charter Services</p>
+            <h1 class="landing-content-title f-rocker">{{ __('messages.Luxury') }}</h1>
+            <p class="text-white">{{ __('messages.Experience') }}</p>
         </div>
     </section>
     <section class="book-now">
         <div class="container">
             <div class="d-flex justify-content-between flex-wrap">
                 <div class="book-now-left col-12 col-md-6">
-                    <h1 class="f-rocker text-center">Book Now for an Unforgettable Journey on the Arabian Sea</h1>
-                    <p class="text-white pt-3">Renting a boat is definitely an experience that you won’t forget. Observe
-                        unique
-                        and breathtaking
-                        views
-                        from your charter boat, take in nature and absorb those summer rays in complete tranquility, away
-                        from
-                        the hustle and bustle of crowded places. A boat rental allows you to explore secret locations that
-                        can't
-                        be reached by land where you can sunbath and swim in the open sea with family or friends.</p>
+                    <h1 class="f-rocker text-center">{{ __('messages.Book') }}</h1>
+                    <p class="text-white pt-3">{{ __('messages.BookDescription') }}</p>
                 </div>
                 <div class="col-md-4 col-12 book-now-right">
 
@@ -39,8 +31,8 @@
         <div class="container-fluid overflow-hidden">
             <div class="d-flex align-items-center justify-content-between flex-wrap">
                 <div class="left-yachts-side text-center col-md-3 col-12">
-                    <h1 class="f-rocker">VIKING WATER WORLD</h1>
-                    <p class="text-black">impeccable service for an unforgettable journey on the Arabian Sea.</p>
+                    <h1 class="f-rocker">{{ __('messages.VIKING') }}</h1>
+                    <p class="text-black">{{ __('messages.Impeccable') }}</p>
                 </div>
                 <div class="right-yachts-side col-12 col-md-8">
 
@@ -52,7 +44,7 @@
                                     <div class="tranding-slide-img position-relative">
                                         <img src="{{ asset('Assets/images/yachts.png') }}">
                                         <div class="tranding-slide-content">
-                                            <h1>Our Top Yachts</h1>
+                                            <h1>{{ __('messages.Clients') }}</h1>
                                             <a style=" position: absolute;
                                             top: -20px;
                                             right: 30px;"
@@ -61,65 +53,37 @@
                                                 <img src="{{ asset('Assets/images/whatsapp.png') }}"
                                                     style="width: 130px !important; height: 30px !important" alt="whatsapp">
                                             </a>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="col-3">
-                                                    <p class="d-flex align-items-center gap-2"> <img
-                                                            style="width: 20px !important; height: 20px !important"
-                                                            class="yacht-icon"
-                                                            src="{{ asset('Assets/images/yachtIcon.png') }}" /> VIKING 1
-                                                    </p>
-                                                    <p class="d-flex align-items-center gap-2"> <img
-                                                            style="width: 20px !important; height: 20px !important"
-                                                            class="yacht-icon"
-                                                            src="{{ asset('Assets/images/yachtIcon.png') }}" />VIKING 2</p>
-                                                    <p class="d-flex align-items-center gap-2"> <img
-                                                            style="width: 20px !important; height: 20px !important"
-                                                            class="yacht-icon"
-                                                            src="{{ asset('Assets/images/yachtIcon.png') }}" />VIKING 3</p>
-                                                    <p class="d-flex align-items-center gap-2"> <img
-                                                            style="width: 20px !important; height: 20px !important"
-                                                            class="yacht-icon"
-                                                            src="{{ asset('Assets/images/yachtIcon.png') }}" />VIKING 4</p>
-                                                    <p class="d-flex align-items-center gap-2"> <img
-                                                            style="width: 20px !important; height: 20px !important"
-                                                            class="yacht-icon"
-                                                            src="{{ asset('Assets/images/yachtIcon.png') }}" />VIKING 5</p>
+
+                                            @foreach ($vikings as $viking)
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="col-3">
+                                                        <p style="white-space: nowrap;
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis; class="d-flex
+                                                            align-items-center gap-2"> <img
+                                                                style="width: 20px !important; height: 20px !important"
+                                                                class="yacht-icon"
+                                                                src="{{ asset('Assets/images/yachtIcon.png') }}" />
+                                                            {{ $viking->yacht }}
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>{{ $viking->feet }} </p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <p style="white-space: nowrap;
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;"
+                                                            class="d-flex align-items-center gap-2">
+                                                            <img style="width: 20px !important; height: 20px !important"
+                                                                class="yacht-icon"
+                                                                src="{{ asset('Assets/images/person.png') }}" />
+                                                            {{ $viking->person }}
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <p>36 feet </p>
-                                                    <p>43 feet </p>
-                                                    <p>63 feet </p>
-                                                    <p>88 feet </p>
-                                                    <p>88 feet (House) </p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p class=" d-flex align-items-center gap-2"> <img
-                                                            style="width: 20px !important; height: 20px !important"
-                                                            class="yacht-icon"
-                                                            src="{{ asset('Assets/images/person.png') }}" /> 12 Person
-                                                    </p>
-                                                    <p class=" d-flex align-items-center gap-2"> <img
-                                                            style="width: 20px !important; height: 20px !important"
-                                                            class="yacht-icon"
-                                                            src="{{ asset('Assets/images/person.png') }}" /> 12 Person
-                                                    </p>
-                                                    <p class=" d-flex align-items-center gap-2"> <img
-                                                            style="width: 20px !important; height: 20px !important"
-                                                            class="yacht-icon"
-                                                            src="{{ asset('Assets/images/person.png') }}" /> 25 Person
-                                                    </p>
-                                                    <p class=" d-flex align-items-center gap-2"> <img
-                                                            style="width: 20px !important; height: 20px !important"
-                                                            class="yacht-icon"
-                                                            src="{{ asset('Assets/images/person.png') }}" /> 60 Person
-                                                    </p>
-                                                    <p class=" d-flex align-items-center gap-2"> <img
-                                                            style="width: 20px !important; height: 20px !important"
-                                                            class="yacht-icon"
-                                                            src="{{ asset('Assets/images/person.png') }}" /> 100 Person
-                                                    </p>
-                                                </div>
-                                            </div>
+                                            @endforeach
+
                                         </div>
                                     </div>
                                 </div>
@@ -139,35 +103,14 @@
                                                     style="width: 130px !important; height: 30px !important" alt="whatsapp">
                                             </a>
                                             <div>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/cocktail.png') }}" />
-                                                    EVENT
-                                                </p>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/cocktail.png') }}" />BIRTHDAYS</p>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/cocktail.png') }}" />WEDDINGS</p>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/cocktail.png') }}" />THURSDAYS WHITE
-                                                    DRESS PARTY</p>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/cocktail.png') }}" />FASHION MODELS
-                                                    YACHT PRO PHOTOSHOOTS</p>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/cocktail.png') }}" />BUSINESS
-                                                    MEETINGS ON YACHT NETWORKINGS</p>
+                                                @foreach ($event as $e)
+                                                    <p class="d-flex align-items-center gap-2"> <img
+                                                            style="width: 20px !important; height: 20px !important"
+                                                            class="yacht-icon"
+                                                            src="{{ asset('Assets/images/cocktail.png') }}" />
+                                                        {{ $e->event }}
+                                                    </p>
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
@@ -186,42 +129,20 @@
                                             right: 30px;"
                                                 href="https://api.whatsapp.com/send/?phone=971508846694&text&type=phone_number&app_absent=0">
                                                 <img src="{{ asset('Assets/images/whatsapp.png') }}"
-                                                    style="width: 130px !important; height: 30px !important"
-                                                    alt="whatsapp">
+                                                    style="width: 130px !important; height: 30px !important" alt="whatsapp">
                                             </a>
                                             <div>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon" src="{{ asset('Assets/images/taz.png') }}" />
-                                                    JET SKI
-                                                </p>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/taz.png') }}" />FLY
-                                                    FISH</p>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/taz.png') }}" />FLY
-                                                    BOARD</p>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/taz.png') }}" />DONUT
-                                                    RIDE</p>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/taz.png') }}" />BANANA BOAT</p>
-                                                <p class="d-flex align-items-center gap-2"> <img
-                                                        style="width: 20px !important; height: 20px !important"
-                                                        class="yacht-icon"
-                                                        src="{{ asset('Assets/images/taz.png') }}" />PARASAILING</p>
+                                                @foreach ($water as $w)
+                                                    <p class="d-flex align-items-center gap-2"> <img
+                                                            style="width: 20px !important; height: 20px !important"
+                                                            class="yacht-icon"
+                                                            src="{{ asset('Assets/images/taz.png') }}" />
+                                                        {{ $w->title }}
+                                                    </p>
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 {{-- SLide ENd --}}
                             </div>
@@ -239,7 +160,7 @@
             <div class="mx-auto w-100 d-flex align-items-center justify-content-center">
                 <img src="{{ asset('Assets/images/google.png') }}" style="max-width: 100%" alt="google rate">
             </div>
-            <p class="text-center text-white">This is what our clients say…</p>
+            <p class="text-center text-white">{{ __('messages.Clients') }}</p>
             <div class="cards">
                 <div class="swiper cards-swiper">
                     <div class="swiper-wrapper">
@@ -364,22 +285,12 @@
     <div class="yacht-party position-relative">
         <img src="{{ asset('Assets/images/graphic.png') }}" class="graphic-down">
         <div class="container text-center">
-            <p class="yacht-party-p f-mon">Yacht Party In Dubai</p>
-            <h1 class="yacht-party-h f-inter">Book your
-                yacht party right now</h1>
-            <p class="yacht-party-p-2 f-mon">A PARTY LIKE NO OTHER!</p>
-            <p class="text-center yacht-party-p-3 f-mon">Book your ultimate Dubai yacht party today. Our 88-foot
-                split-level houseboat
-                offers a
-                luxurious setting with
-                state-of-the-art audio
-                and lighting systems, a Jacuzzi, and two fully stocked bars to execute your perfect event Don't miss out on
-                the opportunity to
-                indulge in the ultimate luxury yacht experience in Dubai. Book your Yacht party right now and make your
-                event a unique and
-                unforgettable experience.</p>
+            <p class="yacht-party-p f-mon">{{ __('messages.Yacht') }}</p>
+            <h1 class="yacht-party-h f-inter">{{ __('messages.BookYacht') }}</h1>
+            <p class="yacht-party-p-2 f-mon">{{ __('messages.PARTY') }}</p>
+            <p class="text-center yacht-party-p-3 f-mon">{{ __('messages.Ultimate') }}</p>
             <a href="https://api.whatsapp.com/send/?phone=971508846694&text&type=phone_number&app_absent=0"
-                class=" f-space custom-btn">Book now</a>
+                class=" f-space custom-btn">{{ __('messages.BookNow') }}</a>
         </div>
     </div>
 
@@ -392,46 +303,49 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">location</h5>
+                    <h5 class="text-uppercase">{{ __('messages.Location') }}</h5>
 
                     <ul class="list-unstyled mb-0">
                         <li>
-                            <a href="#!" class="text-white f-mon text-decoration-none">Mon - Sun: 12.00 pm- 00.00
-                                am</a>
+                            <a href="#!" class="text-white f-mon text-decoration-none">{{ __('messages.Time') }}</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white f-mon text-decoration-none">Dubai Marina -
-                                Dubai - United Arab Emirates</a>
+                            <a href="#!"
+                                class="text-white f-mon text-decoration-none">{{ __('messages.Dubai') }}</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white f-mon text-decoration-none">Tel:+971 50 88 466 94</a>
+                            <a href="#!" class="text-white f-mon text-decoration-none">{{ __('messages.Tel') }}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-0">Navigation</h5>
+                    <h5 class="text-uppercase mb-0">{{ __('messages.NAVIGATION') }}</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#yachts" class="text-white f-mon text-decoration-none">Private Party</a>
+                            <a href="#yachts"
+                                class="text-white f-mon text-decoration-none">{{ __('messages.Private') }}</a>
                         </li>
                         <li>
-                            <a href="#yachts" class="text-white f-mon text-decoration-none">The Yacht</a>
+                            <a href="#yachts"
+                                class="text-white f-mon text-decoration-none">{{ __('messages.Yacht') }}</a>
                         </li>
                         <li>
-                            <a href="#" class="text-white f-mon text-decoration-none">Contact</a>
+                            <a href="#"
+                                class="text-white f-mon text-decoration-none">{{ __('messages.Contact') }}</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Quick Links</h5>
+                    <h5 class="text-uppercase">{{ __('messages.QUICK') }}</h5>
 
                     <ul class="list-unstyled mb-0">
                         <li>
-                            <a href="#!" class="text-white f-mon text-decoration-none">Home</a>
+                            <a href="#!" class="text-white f-mon text-decoration-none">{{ __('messages.Home') }}</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white f-mon text-decoration-none">About</a>
+                            <a href="#!"
+                                class="text-white f-mon text-decoration-none">{{ __('messages.About') }}</a>
                         </li>
                     </ul>
                 </div>

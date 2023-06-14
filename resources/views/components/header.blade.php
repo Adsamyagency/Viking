@@ -11,26 +11,26 @@
                 <div class="d-md-flex align-items-center justify-content-between w-100 f-rocker">
                     <div class="d-md-flex text-md-left text-center align-items-center justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">{{ __('messages.Home') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#yachts">Our Yachts</a>
+                            <a class="nav-link" href="#yachts">{{ __('messages.Yachts') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#yachts">Even & Boat Party</a>
+                            <a class="nav-link" href="#yachts">{{ __('messages.Event') }}</a>
                         </li>
                     </div>
                     <img class="d-lg-block d-none" src="{{ asset('Assets/images/logo.png') }}" alt="logo"
                         width="150px">
                     <div class="d-md-flex text-md-left text-center align-items-center justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link" href="#yachts">Water Sport</a>
+                            <a class="nav-link" href="#yachts">{{ __('messages.water') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#">{{ __('messages.About') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#">{{ __('messages.Contact') }}</a>
                         </li>
                     </div>
                 </div>
