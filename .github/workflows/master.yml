@@ -25,6 +25,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-php-
 
+      - name: npm i
+        run: npm install
+
       - name: Building dep
         run: npm run build
 
