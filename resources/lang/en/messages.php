@@ -3,10 +3,10 @@
 
 return [
     // Navbar
-    'home' => 'home',
-    'about' => 'about',
+    'Home' => 'Home',
+    'Yachts' => 'Our Yachts',
     'Event' => 'Event & Boat Party',
-    'Water' => 'Water Sport',
+    'water' => 'Water Sport',
     'About' => 'About Us',
     'Contact' => 'Contact',
     // Landing
