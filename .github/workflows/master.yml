@@ -31,7 +31,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: https://vikingwaterworld.com/
+          server: https://adsamy.net/
           username: u458956673.vikingwaterworld.com
           password: FtpAdsamy$%#@3455%
           server-dir: public_html/
