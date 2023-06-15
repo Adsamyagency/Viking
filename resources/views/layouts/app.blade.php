@@ -19,8 +19,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    <link href="{{ asset('build/assets/app-4544d513.css') }}" rel="stylesheet">
-    <script src="{{ asset('build/assets/app-0181f32c.js') }}"></script>
+    <link rel="stylesheet" href="{{ mix('build/css/app.css') }}">
+    <script src="{{ mix('build/css/app.js') }}"></script>
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 </head>
 
