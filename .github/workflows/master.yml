@@ -31,7 +31,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ns1.dns-parking.com
+          server: 191.101.230.108
           username: u458956673.vikingwaterworld.com
           password: FtpAdsamy$%#@3455%
           server-dir: public_html/
