@@ -1,37 +1,25 @@
+name: Deploy to Hostinger
+
 on:
   push:
     branches:
-      - master
-name: 🚀 Deploy website on push (Master)
+      - main
+
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 🚚 Get latest code
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.1
-
-      - name: Cache Composer packages
-        id: composer-cache
-        uses: actions/cache@v2
-        with:
-          path: vendor
-          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-php-
-
-      - name: npm i
+      - name: Install dependencies
         run: npm install
 
-      - name: Building dep
+      - name: Build project
         run: npm run build
 
-      - name: 📂 Sync files
+      - name: Deploy project
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: 191.101.230.108
