@@ -13,14 +13,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Clear browser cache
-        run: echo "location.reload(true);" > index.html
-
       - name: Install dependencies
         run: npm install
 
       - name: Build project
         run: npm run build
+
+      - name: Clear Laravel cache
+        run: php artisan cache:clear
 
       - name: Deploy project
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
