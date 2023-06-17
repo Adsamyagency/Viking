@@ -8,7 +8,8 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav w-100">
-                <div class="d-md-flex align-items-center justify-content-between w-100 f-rocker">
+                <div
+                    class="d-md-flex align-items-center justify-content-between w-100 {{ App::isLocale('ar') ? 'f-cairo' : 'f-rocker' }}">
                     <div class="d-md-flex text-md-left text-center align-items-center justify-content-between">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">{{ __('messages.Home') }}</a>
@@ -27,10 +28,19 @@
                             <a class="nav-link" href="#yachts">{{ __('messages.water') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ __('messages.About') }}</a>
+                            <div type="button" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                                <a class="nav-link" href="#">{{ __('messages.About') }} </a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ __('messages.Contact') }}</a>
+                            <div type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                <a class="nav-link" href="#">{{ __('messages.Contact') }}</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link f-cairo" href="{{ App::isLocale('ar') ? '/' : '/ar' }}">
+                                <span> {{ App::isLocale('ar') ? 'English' : 'العربية' }} </span>
+                            </a>
                         </li>
                     </div>
                 </div>

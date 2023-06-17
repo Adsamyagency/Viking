@@ -29,6 +29,9 @@ body {
 .f-space {
     font-family: "Space Grotesk", sans-serif !important;
 }
+.f-cairo {
+    font-family: "Cairo" !important;
+}
 
 /* NavBar */
 .navbar {
@@ -290,7 +293,6 @@ body {
 }
 .yacht-party-p {
     color: #0f0f0f;
-    letter-spacing: 4px;
     background-color: #dfb03f;
     width: fit-content;
     margin: 0 auto;
@@ -302,7 +304,6 @@ body {
 .yacht-party-h {
     width: 313px;
     margin: 0 auto;
-
     margin-bottom: 15px;
 }
 .yacht-party-p-2 {
@@ -336,4 +337,106 @@ body {
 footer {
     background-color: #0f0f0f;
     color: white;
+}
+
+/* Modal */
+.modal-backdrop {
+    z-index: 45 !important;
+}
+.modal-content {
+    background-image: url("../images/about.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.modal-header {
+    border: 0 !important;
+    color: white;
+    font-family: "Roboto", sans-serif !important;
+    text-transform: uppercase;
+    position: relative !important;
+}
+.modal-header::before {
+    content: "";
+    background-color: #f8da4e;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: 35px;
+    height: 1px;
+    position: absolute;
+}
+.modal-body {
+    text-align: center !important;
+    color: white;
+    font-family: "Roboto", sans-serif !important;
+    height: 230px !important;
+    line-height: 2.3;
+    height: fit-content !important;
+}
+.modal-dialog-2 {
+    max-width: 90% !important;
+}
+.modal-content-2 {
+    width: 80% !important;
+}
+.modal-body input,
+.modal-body textarea {
+    background-color: #efefef !important;
+    width: 100%;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.modal-body input::placeholder,
+.modal-body textarea::placeholder {
+    color: #7e8285;
+}
+
+.custom-contact-btn {
+    background-color: #c0c0c0;
+    color: white;
+    border: 0;
+    font-size: 12px;
+    padding: 2px 10px;
+}
+
+.contact-contact {
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+    border-radius: 12px;
+    width: 250px;
+}
+.contact-contact p {
+    margin: 0 !important;
+}
+.contact-contact a {
+    color: white !important;
+    text-decoration: none !important;
+}
+.bottom-form input {
+    background: rgba(255, 255, 255, 0.81);
+    border: 2px solid rgba(173, 175, 176, 0.2);
+    border-radius: 4px;
+}
+.submit-bottom {
+    background-color: #fed700 !important;
+    border: 0 !important;
+    padding: 10px 20px;
+}
+@media (max-width: 768px) {
+    .modal-content {
+        width: 100% !important;
+    }
+    .modal-dialog-2 {
+        max-width: 100% !important;
+    }
 }

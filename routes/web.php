@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\dashboard;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\HanldeLangController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WaterController;
 use App\Http\Controllers\websiteController;
@@ -20,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [websiteController::class, 'website']);
+Route::get('/ar', [HanldeLangController::class, 'handle']);
 
 Route::get('/dashboard', [dashboard::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 

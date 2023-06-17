@@ -18,6 +18,11 @@ return [
     // Events
     'VIKING' => 'VIKING WATER WORLD',
     'Impeccable' => 'impeccable service for an unforgettable journey on the Arabian Sea.',
+    // Slides
+    'our' => 'Our Top Yachts',
+    'WaterSports' => 'Water Sports',
+    'EventB' => 'Event and Boat Party',
+
     // Google
     'Clients' => 'This is what our clients say…',
     // Party
@@ -35,5 +40,19 @@ return [
     'NAVIGATION' => 'NAVIGATION',
     'Private' => 'Private Party',
     'Yacht' => 'The Yacht',
-    'QUICK' => 'QUICK LINKS'
+    'QUICK' => 'QUICK LINKS',
+
+    // Modal
+    'aM' => "VIKING WATER WORLD is Dubai's premier yacht charter company, offering
+                        top-of-the-line yachts and impeccable service for an unforgettable
+                        journey
+                        on the Arabian Sea.",
+    'cM' => 'Contact Us',
+    'sendM' => 'SEND MESSAGE',
+    'callUs' => 'Call us or fill the below form and our team will conect you shortly',
+    'send' => 'Send',
+    'yourName' => 'Your Name',
+    'yourEmail' => 'Your E-mail',
+    'message' => 'Message'
+
 ];
