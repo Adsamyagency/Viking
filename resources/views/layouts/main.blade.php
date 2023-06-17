@@ -18,7 +18,7 @@
 
 
     {{-- Custom Css --}}
-    <link rel="stylesheet" href="{{ asset('Assets/css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('Assets/css/main.css?v=1a040064279b') }}">
 
     {{-- Bootstrap Link --}}
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
